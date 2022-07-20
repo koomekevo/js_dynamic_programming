@@ -22,9 +22,13 @@ function mySet() {
 
   this.remove = (element) => {
     if (this.has(element)) {
-        index = collection.indexOf(element);
-        collection.splice(index, 1);
-        return true;
+      index = collection.indexOf(element);
+      collection.splice(index, 1);
+      return true;
     }
-  }
+  };
+
+  this.size = () => {
+    return collection.length;
+  };
 }
