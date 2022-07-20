@@ -6,5 +6,15 @@ function mySet() {
     return collection.indexOf(element) !== -1;
   };
 
-  this.add = (element) => {};
+  this.values = () => {
+    return collection;
+  };
+
+  this.add = (element) => {
+    if (!collection.has(element)) {
+      collection.push(element);
+      return true;
+    }
+    return false;
+  };
 }
