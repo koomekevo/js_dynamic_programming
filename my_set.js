@@ -69,6 +69,9 @@ function mySet() {
   }
 
   this.subset = (otherSet) => {
-    
-  }
+    var firstSet = this.values();
+    return firstSet.every(function (value) {
+      return otherSet.has(value);
+    });
+  };
 }
