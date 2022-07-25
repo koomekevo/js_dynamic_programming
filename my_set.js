@@ -47,6 +47,7 @@ function mySet() {
 
   // this method will return the intersection of two sets as a new set
   this.intersection = (otherSet) => {
-    
+    var intersectionSet = new mySet();
+    var firstSet = this.values();
   }
 }
