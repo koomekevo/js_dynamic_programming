@@ -49,5 +49,11 @@ function mySet() {
   this.intersection = (otherSet) => {
     var intersectionSet = new mySet();
     var firstSet = this.values();
+    firstSet.forEach(function(e){
+      if(otherSet.has(e)) {
+        intersectionSet.add(e);
+      }
+    });
+    return intersectionSet;
   }
 }
