@@ -56,4 +56,9 @@ function mySet() {
     });
     return intersectionSet;
   }
+
+  this.difference = (otherSet) => {
+    var differenceSet = new Set();
+    var firstSet = this.values();
+  }
 }
