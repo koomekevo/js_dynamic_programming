@@ -75,3 +75,12 @@ function mySet() {
     });
   };
 }
+
+var setA = new mySet();
+var setB = new mySet();
+setA.add("a");
+setB.add("b");
+setB.add("c");
+setB.add("a");
+setB.add("d");
+console.log(setA.subset(setB));
