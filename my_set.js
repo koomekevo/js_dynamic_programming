@@ -44,4 +44,9 @@ function mySet() {
     });
     return unionSet;
   };
+
+  // this method will return the intersection of two sets as a new set
+  this.intersection = (otherSet) => {
+    
+  }
 }
