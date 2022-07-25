@@ -67,4 +67,8 @@ function mySet() {
       return differenceSet;
     })
   }
+
+  this.subset = (otherSet) => {
+    
+  }
 }
